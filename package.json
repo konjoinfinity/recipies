@@ -1,0 +1,25 @@
+{
+  "name": "recipies",
+  "version": "1.0.0",
+  "description": "Express Recipies Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konjoinfinity/recipies.git"
+  },
+  "keywords": [
+    "recipe"
+  ],
+  "author": "konjo and josh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konjoinfinity/recipies/issues"
+  },
+  "homepage": "https://github.com/konjoinfinity/recipies#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
