@@ -6,6 +6,26 @@
 </head>
 <body>
   <h1>Recipies</h1>
+  <form action="/" method="post" class="add-recipe">
+    <div class="input-field">
+      <textarea name="title" placeholder="Recipe Title"></textarea>
+    </div>
+    <div class="input-field">
+      <textarea name="description" placeholder="Recipe Description"></textarea>
+    </div>
+    <div class="input-field">
+      <textarea name="instructions" placeholder="Recipe Instructions"></textarea>
+    </div>
+    <div class="input-field">
+      <textarea name="ingredients" placeholder="Recipe Ingredients"></textarea>
+    </div>
+    <div class="input-field">
+      <textarea name="author" placeholder="Author"></textarea>
+    </div>
+    <div class="input-field">
+      <input type="submit" value="Post Recipe" class="btn">
+    </div>
+  </form>
   {{#if recipies}}
   <ul class="recipe">
     {{#each Recipe}}
