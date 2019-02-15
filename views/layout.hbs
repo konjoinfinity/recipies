@@ -7,7 +7,17 @@
 </head>
 
 <body>
-  {{{Recipies}}}
+  <h1>Recipies</h1>
+  {{#if recipies}}
+  <ul class="recipe">
+    {{#each Recipe}}
+    {{title}}
+    {{description}}
+    {{instructions}}
+    {{ingredients}}
+    {{author}}
+
+  </ul>
 </body>
 
 </html>
