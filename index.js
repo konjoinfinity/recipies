@@ -22,10 +22,7 @@ const message = "Recipe!";
 app.listen(3008, () => console.log("listening on port 3008"));
 
 app.get("/", (req, res) => {
-  //res.render("layout", { message });
-  res.send("Recipe...");
+  res.render("layout");
 });
-
-//database
 
 //routes for crud
