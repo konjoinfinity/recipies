@@ -1,14 +1,17 @@
-const { Recipe } = require("../models/recipe.js");
+const { Recipe } = require("./recipe.js");
 
 module.exports = {
   index: (req, res) => {
     Recipe.find({})
       .limit(10)
-      .populate("title")
+      .populate("author")
       .then(recipes => {
-        res.render("app/", { recipes });
+        res.render("app/index", { recipies });
       });
-  },
+  }
+};
+
+/*
   create: (req, res) => {
     Recipe.create({
       title: req.body.recipe.title,
@@ -21,3 +24,4 @@ module.exports = {
     });
   }
 };
+*/
