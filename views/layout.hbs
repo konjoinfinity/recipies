@@ -6,27 +6,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
-  <h1>Recipies</h1>
-  <form action="/" method="post" class="add-recipe">
+  <nav>
+   <div class="nav-wrapper blue darken-1">
+     <a href="#" class="brand-logo center">Recipies</a>
+  </div>
+</nav>
+<div class="container">
+  <form action="/" method="post" class="add-recipe" class="col 12">
     <div class="input-field">
-      <textarea name="title" placeholder="Recipe Title"></textarea>
+      <textarea name="recipe[title]" placeholder="Recipe Title"></textarea>
+    </div>
+      <div class="input-field">
+        <textarea name="recipe[description]" placeholder="Recipe Description"></textarea>
+      </div>
+        <div class="input-field">
+          <textarea name="recipe[ingredients]" placeholder="Recipe Ingredients"></textarea>
+        </div>
+    <div class="input-field">
+      <textarea name="recipe[instructions]" placeholder="Recipe Instructions"></textarea>
     </div>
     <div class="input-field">
-      <textarea name="description" placeholder="Recipe Description"></textarea>
+      <textarea name="recipe[author]" placeholder="Recipe Author"></textarea>
     </div>
     <div class="input-field">
-      <textarea name="instructions" placeholder="Recipe Instructions"></textarea>
-    </div>
-    <div class="input-field">
-      <textarea name="ingredients" placeholder="Recipe Ingredients"></textarea>
-    </div>
-    <div class="input-field">
-      <textarea name="author" placeholder="Author"></textarea>
-    </div>
-    <div class="input-field">
-      <input type="submit" value="Post Recipe" class="btn blue darken-1">
+      <input type="submit" value="Post Recipe" class="btn blue darken-1 center">
     </div>
   </form>
+
   {{#if recipies}}
   <ul class="recipe">
     {{#each Recipe}}
@@ -38,5 +44,6 @@
   {{/each}}
   </ul>
 {{/if}}
+</div>
 </body>
 </html>
