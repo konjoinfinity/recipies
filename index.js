@@ -16,13 +16,6 @@ app.get("/", (req, res) => {
   res.render("layout");
 });
 
-app.get("/", (req, res) => {
-  console.log(
-    Recipe.find({})
-      .limit(10)
-      .populate("title")
-  );
-});
 //router.get("/", function(req, res) {
 //  res.render("views/index");
 //});

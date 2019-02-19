@@ -1,4 +1,4 @@
-const { Recipe } = require("./recipe.js");
+const Recipe = require("./recipe.js");
 
 module.exports = {
   index: (req, res) => {
@@ -6,7 +6,7 @@ module.exports = {
       .limit(10)
       .populate("author")
       .then(recipes => {
-        res.render("app/index", { recipies });
+        res.render("app/index", recipies);
       });
   }
 };

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/recipes");
+mongoose.connect("mongodb://localhost/recipieapp");
 mongoose.Promise = Promise;
 
 const Schema = mongoose.Schema;
